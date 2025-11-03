@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_dist" name="Create Runnable Jar with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+
+	<!-- Local eclipse project directory -->  
+	<property name="project.dir" value="."/>
+
+	<delete dir="${project.dir}/dist_nuget" />
+	<target name="create_dist">
+		<!--Nugget command to package the extension -->
+		<exec executable="cmd">
+		    <arg value="/c"/>
+		    <arg value="nuget_package.bat"/>
+		</exec>
+	<!-- move file="${project.dir}/com.castsoftware.uc.ei.batch.${version}.nupkg" todir="${project.dir}/dist_nuget" / -->
+
+
+    </target>
+</project>

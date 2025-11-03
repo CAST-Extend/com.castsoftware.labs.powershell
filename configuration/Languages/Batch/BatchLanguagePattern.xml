@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<languagePattern id="Batch">
+	<comment>
+		<begin><![CDATA[rem]]></begin>
+		<end><![CDATA[[\r\n]]]></end>
+		<multiline>false</multiline>
+	</comment>	
+</languagePattern>
