@@ -5,5 +5,5 @@
 		<begin><![CDATA[rem]]></begin>
 		<end><![CDATA[[\r\n]]]></end>
 		<multiline>false</multiline>
-	</comment>	
+	</comment>
 </languagePattern>

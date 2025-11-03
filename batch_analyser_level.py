@@ -48,6 +48,7 @@ class BatchSrcFile(cast.analysers.ua.Extension):
                 None
         
     def start_file(self, file):             # Extension point : each file
+        log.info("In BatchSrcFile.start_file for file : %s" % file.get_path())
         filepath=file.get_path()
         file_name, file_extension = os.path.splitext(filepath)
         

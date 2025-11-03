@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>com.castsoftware.uc.ei.batch</id>
-    <version>1.2.5</version>
-    <title>EI Batch</title>
-    <authors>CAST User Community</authors>
+    <id>com.castsoftware.labs.powershell</id>
+    <version>1.0.0</version>
+    <title>PowerShell</title>
+    <authors>CAST Labs</authors>
     <owners>CAST</owners>
     <licenseUrl>http://www.castsoftware.com/ps/doc/extension/license</licenseUrl>
     <projectUrl>https://github.com/CAST-Extend/com.castsoftware.labs.train.sdk.ua.batch/wiki</projectUrl>

@@ -13,7 +13,7 @@
 		    <arg value="/c"/>
 		    <arg value="nuget_package.bat"/>
 		</exec>
-	<!-- move file="${project.dir}/com.castsoftware.uc.ei.batch.${version}.nupkg" todir="${project.dir}/dist_nuget" / -->
+	<!-- move file="${project.dir}/com.castsoftware.labs.powershell.${version}.nupkg" todir="${project.dir}/dist_nuget" / -->
 
 
     </target>
