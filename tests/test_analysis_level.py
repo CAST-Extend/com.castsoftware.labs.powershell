@@ -9,9 +9,9 @@ import cast.analysers.test
 class Test(unittest.TestCase):
     def testRegisterPlugin(self):
         
-        # instanciate a UA analyzer for 'Batch' language defined by <category name="Batch" rid="4">
+        # instanciate a UA analyzer for 'PowerShell' language defined by <category name="PowerShell" rid="4">
         # see http://cast-projects.github.io/Extension-SDK/doc/code_reference.html?highlight=uatestanalysis#cast.analysers.test.UATestAnalysis
-        analysis = cast.analysers.test.UATestAnalysis('Batch')
+        analysis = cast.analysers.test.UATestAnalysis('PowerShell')
         
         #add_selection for folder, absolute reference
         #analysis.add_selection('C:\CAST_Clients\ACMS\Development\DEV_14.2.1\CswDev\JOBS')

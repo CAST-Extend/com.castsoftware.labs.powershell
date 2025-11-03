@@ -16,7 +16,6 @@
     <type name="Batch_SUBSET" rid="2">
         <description>Batch Subset</description>
         <inheritedCategory name="PROJECT_SUBSET" />
-        <inheritedCategory name="Batch" />
         <inheritedCategory name="APM Batch Module" />
     </type>
 
@@ -26,7 +25,7 @@
         <tree parent="EnlightenUniversalObjects" category="EnlightenTree" />
     </type>
 
-    <category name="Batch" rid="4">
+    <category name="PowerShell" rid="4">
         <description>EI Batch</description>
         <attribute name="extensions" stringValue="*.bat;*.cmd;*.ps1;*.opc;*.hostopcjobs;*.localopcjobs" />
         <inheritedCategory name="UniversalLanguage" />
@@ -37,7 +36,6 @@
     <type name="BatchProject" rid="5">
         <description>Batch Project</description>
         <inheritedCategory name="UAProject" />
-        <inheritedCategory name="Batch" />
         <inheritedCategory name="APM Batch Module" />
     </type>
 
@@ -76,7 +74,6 @@
         <description>Batch Program</description>
         <inheritedCategory name="UAObject" />
         <inheritedCategory name="METRICABLE" />
-        <inheritedCategory name="Batch" />
         <inheritedCategory name="APM Batch Artifacts" />
         <inheritedCategory name="Batch_Properties" />
         <attribute name="AUTO_FOLDER_THRESHOLD" intValue="1"/>
@@ -89,34 +86,29 @@
 		<description>OPC program call</description>
 		<inheritedCategory name="CAST_CallToProgram"/>
 		<inheritedCategory name="UAObject"/>
-		<inheritedCategory name="Batch"/>
 	</type>
 	<type name="PowerShellDotNetCall" rid="11">
 		<description>PowerShell program call</description>
 		<inheritedCategory name="CAST_CallToProgram"/>
 		<inheritedCategory name="UAObject"/>
-		<inheritedCategory name="Batch"/>
 	</type>
 
 	<type name="WindowsBATDotNetCall" rid="12">
 		<description>Windows BAT program call</description>
 		<inheritedCategory name="CAST_CallToProgram"/>
 		<inheritedCategory name="UAObject"/>
-		<inheritedCategory name="Batch"/>
 	</type>
 
 	<type name="WindowsCMDDotNetCall" rid="13">
 		<description>Windows CMD program call</description>
 		<inheritedCategory name="CAST_CallToProgram"/>
 		<inheritedCategory name="UAObject"/>
-		<inheritedCategory name="Batch"/>
 	</type>
 		
     <type name="OPCApplication" rid="14">
         <description>OPC Application</description>
         <inheritedCategory name="UAObject" />
         <inheritedCategory name="METRICABLE" />
-        <inheritedCategory name="Batch" />
         <inheritedCategory name="APM Batch Artifacts" />
         <inheritedCategory name="Batch_Properties" />
         <attribute name="AUTO_FOLDER_THRESHOLD" intValue="1"/>
@@ -127,7 +119,6 @@
         <description>OPC Job</description>
         <inheritedCategory name="UAObject" />
         <inheritedCategory name="METRICABLE" />
-        <inheritedCategory name="Batch" />
         <inheritedCategory name="APM Batch Artifacts" />
         <inheritedCategory name="Batch_Properties" />
         <attribute name="AUTO_FOLDER_THRESHOLD" intValue="1"/>

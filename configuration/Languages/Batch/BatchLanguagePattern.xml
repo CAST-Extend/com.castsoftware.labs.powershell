@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<languagePattern id="Batch">
+<languagePattern id="PowerShell">
 	<comment>
 		<begin><![CDATA[rem]]></begin>
 		<end><![CDATA[[\r\n]]]></end>
