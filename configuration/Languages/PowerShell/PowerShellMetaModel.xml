@@ -64,6 +64,7 @@
     <type name="PowerShellModule" rid="5">
         <description>PowerShell Module</description>
         <inheritedCategory name="UAObject"/>
+        <inheritedCategory name="PowerShell" />
         <inheritedCategory name="PowerShell Module"/>
         <inheritedCategory name="PowerShell Artifacts"/>
         <tree parent="PowerShellProgram" category="EnlightenTree"/>
