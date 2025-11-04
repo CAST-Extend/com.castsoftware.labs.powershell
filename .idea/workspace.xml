@@ -4,51 +4,11 @@
     <list default="true" id="5012d44b-67e0-4772-b520-1355b9c776ae" name="Default" comment="">
       <change type="DELETED" beforePath="$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/cast_upgrade_1_6_5.py" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/lib_cast_upgrade_1_6_5.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.github/copilot-instructions.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/com.castsoftware.uc.ei.batch.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.vscode/mcp.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/BatchLanguagePattern.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/BatchMetaModel.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/res/BatchProgram.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/res/OPCApplication.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/res/OPCDotNetCall.ICO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/res/OPCJob.ICO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/res/PowerShellDotNetCall.ICO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/res/WindowsBATDotNetCall.ICO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/configuration/Languages/Batch/res/WindowsCMDDotNetCall.ICO" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/central.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/amt_saver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/css.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/find_plugins.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/metamodel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/p1/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/p1/pyaes/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/p1/pyaes/aes.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/p1/pyaes/blockfeeder.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/p1/pyaes/util.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/reflect.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/run_plugins.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/save_restore_results.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/tables.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/test_api.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/internal/upgrader.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/managment.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/server.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/setup.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib_cast_upgrade_1_6_23/test.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/batch_analyser_level.py" afterPath="$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/batch_analyser_level.py" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/batch_endapplication.py" afterPath="$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/batch_endapplication.py" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/tests/test_endapplication.py" afterPath="$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/tests/test_endapplication.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.project" afterPath="$PROJECT_DIR$/.project" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/batch_analyser_level.py" afterPath="$PROJECT_DIR$/batch_analyser_level.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.nuspec" afterPath="$PROJECT_DIR$/plugin.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/configuration/Languages/PowerShell/PowerShellMetaModel.xml" afterPath="$PROJECT_DIR$/configuration/Languages/PowerShell/PowerShellMetaModel.xml" />
     </list>
     <ignored path="com.castsoftware.labs.powershell.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,12 +30,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="batch_analyser_level.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/batch_analyser_level.py">
+        <entry file="file://$PROJECT_DIR$/batch_analyser_level.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="20" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="20" />
+            <state vertical-scroll-proportion="-5.5227275">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#97#123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,28 +44,8 @@
       <file leaf-file-name="PowerShellMetaModel.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/configuration/Languages/PowerShell/PowerShellMetaModel.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.90399003">
-              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_analysis_level.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/tests/test_analysis_level.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BatchLanguagePattern.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/configuration/Languages/Batch/BatchLanguagePattern.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4705882">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.6955345">
+              <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -114,30 +54,18 @@
       <file leaf-file-name="BatchMetaModel.xml" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/configuration/Languages/Batch/BatchMetaModel.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.676471">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="25" />
+            <state vertical-scroll-proportion="-4.423077">
+              <caret line="129" column="42" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="batch_analyser_level.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/batch_analyser_level.py">
+        <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/batch_analyser_level.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PowerShellLanguagePattern.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/configuration/Languages/PowerShell/PowerShellLanguagePattern.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.617647">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -151,6 +79,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/batch_analyser_level.py" />
         <option value="$PROJECT_DIR$/configuration/Languages/PowerShell/PowerShellMetaModel.xml" />
       </list>
     </option>
@@ -234,32 +163,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test_cases" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.castsoftware.labs.powershell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com.castsoftware.labs.powershell" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configuration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Languages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestWebServiceLinker" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,48 +425,48 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_com_castsoftware_uc_ei_batch - 2025.11.03 at 17h 35m 25s.xml">
-      <configuration name="Unittests in com.castsoftware.uc.ei.batch" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 17h 27m 37s.xml">
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 04m 47s.xml">
       <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 17h 28m 02s.xml">
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 06m 15s.xml">
       <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 17h 31m 10s.xml">
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 07m 47s.xml">
       <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 17h 31m 15s.xml">
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 09m 53s.xml">
       <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 17h 31m 30s.xml">
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 11m 03s.xml">
       <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 17h 37m 49s.xml">
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 14m 49s.xml">
       <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 17h 42m 45s.xml">
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 20m 39s.xml">
       <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 17h 47m 44s.xml">
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 24m 15s.xml">
       <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_analysis_level_(1) - 2025.11.03 at 17h 36m 17s.xml">
-      <configuration name="Unittests in test_analysis_level (1)" configurationId="tests" />
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 25m 18s.xml">
+      <configuration name="Unittests in test_analysis_level" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_analysis_level - 2025.11.03 at 19h 32m 51s.xml">
+      <configuration name="Unittests in test_analysis_level" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="2869" y="-11" width="2902" height="1570" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979476" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3821656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42675158" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -592,16 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/batch_analyser_level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_analysis_level.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7692308">
@@ -610,28 +503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/batch_analyser_level.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/tests/test_analysis_level.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/configuration/Languages/Batch/BatchLanguagePattern.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -644,26 +519,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/configuration/Languages/Batch/BatchMetaModel.xml">
+    <entry file="file://C:/Cast/ProgramFiles/CAST/8.3/ThirdParty/Python34/Lib/site-packages/cast/analysers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.676471">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.33296704">
+          <caret line="819" column="0" selection-start-line="819" selection-start-column="0" selection-end-line="819" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/configuration/Languages/Batch/BatchLanguagePattern.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.057077624">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configuration/Languages/PowerShell/PowerShellLanguagePattern.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.617647">
+        <state vertical-scroll-proportion="0.3044655">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/batch_analyser_level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/batch_analyser_level.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5227275">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#97#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/com.castsoftware.uc.ei.batch/configuration/Languages/Batch/BatchMetaModel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.423077">
+          <caret line="129" column="42" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/configuration/Languages/PowerShell/PowerShellMetaModel.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.90399003">
-          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6955345">
+          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
           <folding />
         </state>
       </provider>

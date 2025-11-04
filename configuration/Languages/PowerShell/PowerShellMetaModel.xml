@@ -2,84 +2,111 @@
 
 <metaModel file_level="client" file_no="193">
 	<!-- ID range is 2194000 to 2194999 -->
+
+    <!-- ========================================================= -->
+    <!--       CATEGORIES                                           -->
+    <!-- ========================================================= -->
 	
-    <category name="PowerShell Module" rid="0">
+    <!-- Root category for the language -->
+    <category name="PowerShell" rid="0">
         <description>PowerShell</description>
-        <inheritedCategory name="APM Client Modules" />
+        <attribute name="extensions" stringValue="*.ps1;*.psm1" />
+        <inheritedCategory name="UniversalLanguage" />
+        <inheritedCategory name="CsvLanguage" />
     </category>
 
+    <!-- Category grouping all PowerShell objects -->
     <category name="PowerShell Artifacts" rid="1">
         <description>PowerShell Artifacts</description>
         <inheritedCategory name="APM Client Language Artifacts" />
     </category>
 
-    <type name="PowerShell_SUBSET" rid="2">
-        <description>PowerShell Subset</description>
-        <inheritedCategory name="PROJECT_SUBSET" />
-        <inheritedCategory name="PowerShell" />
-        <inheritedCategory name="PowerShell Module" />
-    </type>
-
-    <!-- PowerShell group -->
-    <type name="EnlightenPowerShell" rid="3">
-        <description>PowerShell</description>
-        <tree parent="EnlightenUniversalObjects" category="EnlightenTree" />
-    </type>
-
-    <category name="PowerShell" rid="4">
-        <description>PowerShell</description>
-        <attribute name="extensions" stringValue="*.bat;*.cmd;*.ps1;*.opc;*.hostopcjobs;*.localopcjobs" />
-        <inheritedCategory name="UniversalLanguage" />
-        <inheritedCategory name="CsvLanguage" />
+    <!-- Category grouping module-level objects -->
+    <category name="PowerShell Module" rid="2">
+        <description>PowerShell Module category</description>
+        <inheritedCategory name="APM Client Modules" />
     </category>
 
-    <!-- PowerShell project -->
-    <type name="PowerShellProject" rid="5">
-        <description>PowerShell Project</description>
-        <inheritedCategory name="UAProject" />
-        <inheritedCategory name="PowerShell"/>
-        <inheritedCategory name="PowerShell Module" />
-    </type>
+    <!-- Optional category for specific properties -->
+    <category name="PowerShell_Properties" rid="100">
+        <description>PowerShell properties</description>
+        <property name="numberOfFunctions" type="integer" merge="sum" rid="7">
+            <description>Number of functions in the script</description>
+        </property>
+        <property name="numberOfClasses" type="integer" merge="sum" rid="8">
+            <description>Number of classes in the script</description>
+        </property>
+    </category>
 
-    <!-- PowerShell category and properties -->
-	<category name="PowerShell_Properties" rid="100">
-		<description>PowerShell properties</description>
-	   	<property name="numberOfCACLScommand" type="integer" merge="sum" rid="7">
-			<description>Number of CACLS command</description>
-			<attribute name="INF_TYPE" intValue="2193500"/>
-			<attribute name="INF_SUB_TYPE" intValue="7"/>
-			<attribute name="ACCESS_APPVIEW" intValue="1"/>
-			<attribute name="ACCESS_CVS" intValue="1"/>
-			<attribute name="ACCESS_HTML" intValue="1"/>
-		  </property>
-		<property name="numberOfICACLScommand" type="integer" merge="sum" rid="8">
-			<description>Number of ICACLS command</description>
-			<attribute name="INF_TYPE" intValue="2193500"/>
-			<attribute name="INF_SUB_TYPE" intValue="8"/>
-			<attribute name="ACCESS_APPVIEW" intValue="1"/>
-			<attribute name="ACCESS_CVS" intValue="1"/>
-			<attribute name="ACCESS_HTML" intValue="1"/>
-		  </property>
-		 <property name="numberLinesifAbove10" type="integer" merge="sum" rid="9">
-			<description>Number of lines above 10</description>
-			<attribute name="INF_TYPE" intValue="2193500"/>
-			<attribute name="INF_SUB_TYPE" intValue="9"/>
-			<attribute name="ACCESS_APPVIEW" intValue="1"/>
-			<attribute name="ACCESS_CVS" intValue="1"/>
-			<attribute name="ACCESS_HTML" intValue="1"/>
-		  </property>
-	</category>
-	
-    <!-- PowerShell Types -->
+    <!-- ========================================================= -->
+    <!--       TYPES                                               -->
+    <!-- ========================================================= -->
 
-    <type name="PowerShellProgram" rid="6">
+    <!-- PowerShell Enlighten group -->
+	<type name="EnlightenPowerShell" rid="3">
+		<description>PowerShell</description>
+		<tree parent="EnlightenUniversalObjects" category="EnlightenTree"/>
+	</type>
+
+    <!-- Main script file -->
+    <type name="PowerShellProgram" rid="4">
         <description>PowerShell Program</description>
         <inheritedCategory name="UAObject" />
         <inheritedCategory name="METRICABLE" />
+        <inheritedCategory name="PowerShell" />
         <inheritedCategory name="PowerShell Artifacts" />
         <inheritedCategory name="PowerShell_Properties" />
         <attribute name="AUTO_FOLDER_THRESHOLD" intValue="1"/>
         <tree parent="EnlightenPowerShell" category="EnlightenTree" />
+    </type>
+
+     <!-- Logical module (psm1) -->
+    <type name="PowerShellModule" rid="5">
+        <description>PowerShell Module</description>
+        <inheritedCategory name="UAObject"/>
+        <inheritedCategory name="PowerShell Module"/>
+        <inheritedCategory name="PowerShell Artifacts"/>
+        <tree parent="PowerShellProgram" category="EnlightenTree"/>
+    </type>
+
+    <!-- Class defined inside a script or module -->
+    <type name="PowerShellClass" rid="6">
+        <description>PowerShell Class</description>
+        <inheritedCategory name="UAObject"/>
+        <inheritedCategory name="PowerShell Artifacts"/>
+        <tree parent="PowerShellProgram" category="EnlightenTree"/>
+    </type>
+
+    <!-- Method defined inside a class -->
+    <type name="PowerShellMethod" rid="7">
+        <description>Method of a PowerShell Class</description>
+        <inheritedCategory name="UAObject"/>
+        <inheritedCategory name="PowerShell Artifacts"/>
+        <tree parent="PowerShellClass" category="EnlightenTree"/>
+    </type>
+
+    <!-- Standalone function -->
+    <type name="PowerShellFunction" rid="8">
+        <description>Standalone PowerShell Function</description>
+        <inheritedCategory name="UAObject"/>
+        <inheritedCategory name="PowerShell Artifacts"/>
+        <tree parent="PowerShellProgram" category="EnlightenTree"/>
+    </type>
+
+    <!-- Generic call (method/function invocation) -->
+    <type name="PowerShellCall" rid="9">
+        <description>PowerShell Call (Function or Method Invocation)</description>
+        <inheritedCategory name="UAObject"/>
+        <inheritedCategory name="PowerShell Artifacts"/>
+        <tree parent="PowerShellFunction" category="EnlightenTree"/>
+    </type>
+
+    <!-- PowerShell project -->
+    <type name="PowerShellProject" rid="10">
+        <description>PowerShell Project</description>
+        <inheritedCategory name="UAProject" />
+        <inheritedCategory name="PowerShell"/>
+        <inheritedCategory name="PowerShell Module" />
     </type>
 
 </metaModel>
