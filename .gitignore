@@ -1,1 +1,17 @@
 /*.nupkg
+
+# IDE trash
+.idea/
+.vscode/
+
+# Python trash
+__pycache__/
+*.pyc
+
+# GitHub metadata
+.github/
+
+# CAST temp
+*.uax
+*.tmp
+*.log
