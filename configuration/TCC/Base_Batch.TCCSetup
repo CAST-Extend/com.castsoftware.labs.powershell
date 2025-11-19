@@ -47,12 +47,4 @@
 </associations>
 <prefixes version="1.0.0.0" encoding="UTF-8">
 </prefixes>
-<ignoredtables version="1.0.0.0" encoding="UTF-8">
-  <value description="Lookup entities">^(lkp_.+|.+types?|.+_t)$</value>
-  <value description="Status entities">^(.+status)$</value>
-  <value description="Translation extension entities">^(.+_l|.+_lang)$</value>
-  <value description="Temporary data entities">^(.+temp|.*session.*|.*error.*|.*search.*|.*login.*|.*logon.*|.*filter.*)$</value>
-  <value description="Template data entities">^(.*template.*)$</value>
-  <value description="Auditing data entities">^(.*history.*|.+_old|.*audit.*)$</value>
-</ignoredtables>
 </setup>

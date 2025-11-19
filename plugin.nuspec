@@ -7,19 +7,18 @@
     <authors>CAST Labs</authors>
     <owners>CAST</owners>
     <licenseUrl>http://www.castsoftware.com/ps/doc/extension/license</licenseUrl>
-    <projectUrl>https://github.com/CAST-Extend/com.castsoftware.labs.train.sdk.ua.batch/wiki</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/CAST-Extend/com.castsoftware.labs.train.sdk.ua.batch/master/training200x200.png</iconUrl>
+    <projectUrl>https://example.com/project</projectUrl>
+    <iconUrl>https://example.com/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This extension parses Windows BAT CMD PS1 and OPC files and creates Program call objects that can be linked (by WBS Linker) to Server objects</description>
-    <releaseNotes>https://github.com/CAST-Extend/com.castsoftware.labs.train.sdk.ua.batch/wiki#version-220</releaseNotes>
-    <tags>BAT CMD PS1 OPC Batch PowerShell UA Program Linking</tags>
+    <description>This extension parses Windows PS1 and PSM1 files and creates calls between them</description>
+    <releaseNotes></releaseNotes>
+    <tags>PS1 PSM1 PowerShell UA</tags>
     <dependencies>
       <dependency id="CAIP" version="8.3.3" />
-      <dependency id="com.castsoftware.wbslinker" version="1.6.11" />
     </dependencies>
   </metadata>
   <files>
-	<file src="**\*"  exclude="**\__pycache__**;tests\configuration\Languages\**\*.*" />
-  </files>  
-  
+    <file src="**\*" exclude="tests\**;**\__pycache__\**" target="." />
+  </files>
+
 </package>

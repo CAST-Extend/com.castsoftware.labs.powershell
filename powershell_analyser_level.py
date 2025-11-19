@@ -47,6 +47,10 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
         program.save()
         created_objects[program_type].append(filename)
 
+        # Register program as GLOBAL scope for this file
+        global_fullname = filename + '.GLOBAL'
+        self.all_functions[global_fullname] = program
+
         try:
             ps_script = """
             $ast = [System.Management.Automation.Language.Parser]::ParseFile('{0}',[ref]$null,[ref]$null)
@@ -141,7 +145,7 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
                             'Type' = $Node.Expression.GetType().Name
                         }}
 
-                        # Extract Extent → CRUCIAL pour récupérer "$this"
+                        # Extract Extent â†' CRUCIAL pour rÃ©cupÃ©rer "$this"
                         if ($Node.Expression.Extent) {{
                             $expr['Extent'] = @{{
                                 'Text' = $Node.Expression.Extent.Text
@@ -384,7 +388,8 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
                             caller_info = self.current_function_stack[-1]
                             caller_fullname = caller_info['fullname']
                         else:
-                            caller_fullname = "GLOBAL"
+                            # Use file-specific GLOBAL scope
+                            caller_fullname = filename + '.GLOBAL'
 
                         # Register call for later processing
                         call_info = {
@@ -416,8 +421,10 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
         # Create index for fast resolution: {short_name: [fullname1, fullname2, ...]}
         functions_by_name = defaultdict(list)
         for fullname in self.all_functions.keys():
-            short_name = fullname.split('.')[-1]
-            functions_by_name[short_name].append(fullname)
+            # Skip GLOBAL entries in the index
+            if not fullname.endswith('.GLOBAL'):
+                short_name = fullname.split('.')[-1]
+                functions_by_name[short_name].append(fullname)
 
         # Statistics
         intra_file_links = 0
@@ -425,6 +432,7 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
         unresolved_calls = 0
         native_cmdlets = 0
         method_calls = 0
+        global_calls = 0
 
         for call in self.pending_calls:
             caller_fullname = call['caller']
@@ -432,15 +440,15 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
             call_type = call.get('type', 'function_call')
 
             # Find caller object
-            caller_obj = None
-            if caller_fullname != "GLOBAL":
-                caller_obj = self.all_functions.get(caller_fullname)
+            caller_obj = self.all_functions.get(caller_fullname)
 
             if not caller_obj:
                 unresolved_calls += 1
+                log.warning("[PowerShell] Caller not found: {}".format(caller_fullname))
                 continue
 
             callee_obj = None
+            is_global_call = caller_fullname.endswith('.GLOBAL')
 
             # CASE 1: $this.Method() call - we already know the fullname
             if call_type == 'method_call':
@@ -470,6 +478,8 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
                 if potential_intra_file in self.all_functions:
                     callee_obj = self.all_functions[potential_intra_file]
                     intra_file_links += 1
+                    if is_global_call:
+                        global_calls += 1
                     log.info("[PowerShell] Intra-file call (PRIORITY): {} -> {}".format(
                         caller_fullname, potential_intra_file))
                 else:
@@ -489,6 +499,8 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
                                 caller_fullname, callee_fullname))
                         else:
                             inter_file_links += 1
+                            if is_global_call:
+                                global_calls += 1
                             log.info("[PowerShell] Inter-file call (unique match): {} -> {}".format(
                                 caller_fullname, callee_fullname))
 
@@ -509,6 +521,8 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
                             # Found function in same file
                             callee_obj = self.all_functions[same_file_candidate]
                             intra_file_links += 1
+                            if is_global_call:
+                                global_calls += 1
                             log.info("[PowerShell] Intra-file call (ambiguous resolved to same file): {} -> {}".format(
                                 caller_fullname, same_file_candidate))
                         else:
@@ -516,6 +530,8 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
                             callee_fullname = candidates[0]
                             callee_obj = self.all_functions[callee_fullname]
                             inter_file_links += 1
+                            if is_global_call:
+                                global_calls += 1
                             log.info("[PowerShell] Inter-file call (ambiguous, first match): {} -> {}".format(
                                 caller_fullname, callee_fullname))
 
@@ -551,8 +567,9 @@ class PowerShellAnalyzerLevel(cast.analysers.ua.Extension):
         log.info('[PowerShell]   - Intra-file links (same file): {}'.format(intra_file_links))
         log.info('[PowerShell]   - Inter-file links (cross file): {}'.format(inter_file_links))
         log.info('[PowerShell]   - Method calls ($this): {}'.format(method_calls))
+        log.info('[PowerShell]   - Global scope calls: {}'.format(global_calls))
         log.info('[PowerShell]   - Native cmdlets (ignored): {}'.format(native_cmdlets))
-        log.info('[PowerShell]   - Unresolved calls (from GLOBAL): {}'.format(unresolved_calls))
+        log.info('[PowerShell]   - Unresolved calls (caller not found): {}'.format(unresolved_calls))
         log.info('[PowerShell]   - Total calls detected: {}'.format(len(self.pending_calls)))
 
         log.info('[PowerShell] ===== End of PowerShell analysis =====')
